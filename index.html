@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  
+  <title>PLO</title>
+  <style>
+    header {
+      background: url('img/art1.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 1008px;
+    }
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    #bb-image1 {
+      position: relative;
+      top: 30px;
+    }
+    @media screen and (max-width: 670px) {
+      header {
+        min-height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="" class="brand-logo">Pablo's World</a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="">Experience</a></li>
+          <li><a href="">Hobbies</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="https://github.com/LoPaul/" target="_blank" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Github">
+            <i class="fab fa-github"></i>
+          </a></li>
+          <li><a href="https://www.facebook.com/mr.plo" target="_blank" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#projects"></a>Projects</li>
+            <li><a href="#experience"></a>Experience</li>
+            <li><a href="#hobbies"></a>Hobbies</li>
+            <li><a href="#contact"></a>Contact</li>
+
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/street.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <section class="container section scrollspy" id="projects">
+    <div class="row">
+      <div class="col s12 l6">
+        <div class="col s12 l12">
+          <img src="img/Briteboard1.png" alt="" class="responsive-img material-box" id="bb-image">
+        </div>
+        <div class="col s12 l12">
+          <img src="img/Briteboard2.png" alt="" class="responsive-img material-box" id="bb-image">
+        </div>
+      </div>
+      <div class="col s12 l6">
+          <h2 class="indigo-text text-darken-4">Briteboard</h2>
+          <p>An online collaborative whiteboard application for creative sketching, diagramming, and planning, built as our final group project at Lighthouse Labs. Users are able to create new boards (no registration required) using provided starter templates, and then share the link to their board with friends and colleagues. Users are able to collaborate by freehand drawing, adding shapes, text and images, and communicating via voice and video chat. Boards and their current state are saved in a database so they can be revisited at any time, or deleted when no longer needed.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+      $('.tooltipped').tooltip();
+      $('.material-box').materialbox();
+      $('.parallax').parallax();
+      $('.scrollspy').scrollSpy();
+
+    })
+  </script>
+  
+</body>
+</html>
